@@ -99,7 +99,7 @@ a {
 /* Layout */
 .grid-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
 }
 
@@ -232,10 +232,43 @@ nav ul li a {
 }
 
 .portfolio-cover {
-    height: 250px;
+    height: 180px;
+    display: flex;
+    justify-content: center;    
+    border-bottom: 1px solid var(--borderColor);
+    align-items: center;
 }
 
 .portfolio-cover img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: contain;
+}
+
+.portfolio-cover1 {
+    border-bottom: 1px solid var(--borderColor);
+    background-color: white;
+    height: 250px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-cover1 img {
+    width: 150px;
+    object-fit: contain;
+}
+
+.portfolio-cover2 {
+    border-bottom: 1px solid var(--borderColor);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-cover2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
